@@ -44,11 +44,16 @@ a:hover { color: var(--ink); }
 }
 .data-field {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  width: 54%;
+  height: 62%;
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent 0 38%, #000 62%);
+  mask-image: linear-gradient(90deg, transparent, #000 14% 86%, transparent),
+              linear-gradient(#000 78%, transparent);
+  mask-composite: intersect;
 }
 .bit {
   position: absolute;
@@ -111,12 +116,12 @@ nav a:hover { color: var(--ink); }
 .identity {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   gap: 28px;
   padding-top: 8px;
 }
 .portrait {
-  width: 200px;
+  width: 168px;
   height: 196px;
   object-fit: cover;
   object-position: center top;
