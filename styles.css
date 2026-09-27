@@ -220,7 +220,7 @@ h2 {
   line-height: 1.35;
   font-style: normal;
   font-weight: 500;
-  max-width: 28em;
+  max-width: 26em;
 }
 .status::before {
   content: "";
