@@ -81,7 +81,8 @@ const SITE = {
       { file: "me.jpg", caption: "Just me" },
       { file: "mountains.jpg", caption: "Mountains" },
       { file: "sing.jpg", caption: "OMG..." },
-      { file: "gym.jpg", caption: "Gym!" }
+      { file: "gym.jpg", caption: "Gym!" },
+      { file: "wife.jpg"}
     ]
   },
 
