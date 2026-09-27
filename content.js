@@ -8,23 +8,25 @@ const SITE = {
   name: "Łukasz Gawin",
   role: "System & Data Analyst",
   location: "Tricity, Poland",
-  email: "ggawin.j.lukasz@gmail.com",          // <-- wpisz mail
+  email: "ggawin.j.lukasz@gmail.com", 
   linkedin: "https://www.linkedin.com/in/lukaszgawin/",
-  github: "",                       // <-- opcjonalnie, np. https://github.com/lukaszgawin
+  github: "",
   availability: "Open to analyst and data roles from March 2027. Happy to talk earlier.",
 
   heroLead:
     "Twenty years+ of getting a number out of a live systems that other people have to trust.",
 
   about: [
-    "For 20+ years i growed together with Jeppesen Poland (Boeing Poland). Established first aviation unit in Gdansk in 2007 (AvDocs), including two databases that have to stay in sync. When someone had a question, I went into the data. A slide was the last resort.",
-    "A lot of the job was unglamorous, and I liked that part. Check why a number looks wrong. Write the report so the business does not have to wait for a developer. I built a small Python app for that. When the team argued about the queue, I pulled Jira into a Jupyter notebook and showed the chart.",
-    "I am picking up the tools people expect now: stronger SQL, pandas, Power BI, Databricks. I will not pretend I have years of a lakehouse. I do have years of production data, and I am building the new stack around that habit."
+    "Łukasz Gawin: 'There is no shame in admitting you don't know something. The shame lies in doing nothing about it.'"
+    "For 20+ years i growed together with Jeppesen / Boeing Poland. I was part of the first aviation unit in Gdansk in 2007 (AvDocs). After that i was responsible for supporting many production systems (Production Support aka IT/System Analyst)."
+    "Time passed quickly - leadership had a question, I went into the databases, and quickly gave all answers, directions and recommendations. A slide was the last resort. A lot of the job was unglamorous, and I liked that part. Check why a number looks wrong. Write the report, automate it, create app in Python so the business does not have to wait for a dedicated developer. (naturaly became System/Data Analyst)"
+    "When leadership needed live dashboards with statistics, KPI's - I pulled Jira into a Jupyter notebook and showed the charts - Python [matplotlib,seaborn] (then i became Data Analyst).",
+    "Time flies fast and now im ready for new opportunities: complex SQL, pandas, Power BI, Databricks. I will not pretend I have years of a lakehouse. I do have years of production data, and I am building the new stack around that habit."
   ],
 
   facts: [
     { k: "20+", v: "years experience on operational data" },
-    { k: "Data Anlysis", v: "SQL, Python, Power BI, ETL" },
+    { k: "Data Analysis", v: "SQL, Python, Power BI, ETL" },
     { k: "EN / PL", v: "working languages" },
     { k: "Tricity", v: "remotely | hybrid | on site" }
   ],
@@ -38,7 +40,7 @@ const SITE = {
       points: [
         "Supported production systems.",
         "Data Analysis on production Oracle DB's, answered business questions in SQL, kept the number trustworthy.",
-        "Automated operational reports, built Python apps seaborn) to keep leadership up to date with KPI's.",
+        "Automated operational reports, built Python apps (matplotlib, seaborn) to keep leadership up to date with KPI's.",
         "Requirements, documentation and handover on systems other people depend on every day. ",
         "SAFe and Scrum in daily work."
       ]
