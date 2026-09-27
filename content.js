@@ -47,14 +47,14 @@ const SITE = {
   ],
 
   stack: [
-    { name: "Oracle / SQL", note: "daily, production, including PL/SQL-shaped work", level: "strong" },
-    { name: "Python", note: "reporting app, notebooks, pandas refresh in progress", level: "working" },
-    { name: "Jupyter", note: "analysis and charts, not just experiments", level: "working" },
-    { name: "matplotlib / Plotly", note: "Jira stats, team workload, trends", level: "working" },
-    { name: "Jira", note: "queue, workflow, numbers behind the tickets", level: "strong" },
-    { name: "Git", note: "enough to work in a team, not a release engineer", level: "working" },
-    { name: "Power BI", note: "learning — moving notebook charts to a tool business already opens", level: "learning" },
-    { name: "Databricks / Delta", note: "learning — lakehouse, not years of production yet", level: "learning" }
+    { name: "Oracle / SQL", note: "daily, production, including PL/SQL-shaped work", level: "senior" },
+    { name: "Python", note: "reporting app, notebooks, pandas refresh in progress", level: "mid" },
+    { name: "Jupyter", note: "analysis and charts, not just experiments", level: "mid" },
+    { name: "matplotlib / Plotly", note: "Jira stats, team workload, trends", level: "mid" },
+    { name: "Atlassian Suite (Jira,Confluence) / ServiceNow", note: "queue, workflow, numbers behind the tickets", level: "senior" },
+    { name: "Git / VSCode", note: "enough to work in a team, not a release engineer", level: "senior" },
+    { name: "Power BI / Tableau", note: "moving notebook charts to a tool business already opens", level: "mid" },
+    { name: "Databricks / Delta", note: "learning — lakehouse, not years of production yet", level: "junior" }
   ],
 
   skills: [
