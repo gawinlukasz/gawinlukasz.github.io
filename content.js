@@ -11,7 +11,7 @@ const SITE = {
   email: "gawin.j.lukasz@gmail.com", 
   linkedin: "https://www.linkedin.com/in/lukaszgawin/",
   github: "",
-  availability: "Open to analyst and data roles from March 2027. Happy to talk earlier.",
+  availability: "Open to analyst and data roles from March 2027.\n Happy to talk earlier.",
 
   heroLead:
     "Twenty years+ of getting a number out of a live systems that other people have to trust.",
