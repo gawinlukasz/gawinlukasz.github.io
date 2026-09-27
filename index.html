@@ -156,18 +156,74 @@
   <script>
     (function () {
       var field = document.querySelector(".data-field");
-      if (!field || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      var logo = document.querySelector(".logo-link");
+      if (!field) return;
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       var tokens = ["SELECT", "0.042", "JOIN", "Δ +1.8%", "NULL", "ROW_NUMBER", "42.1k", "GROUP BY", "ETA 06:12", "lag()", "0.91", "MERGE", "kpi 128", "WHERE", "3.4ms", "AVG"];
-      for (var i = 0; i < 14; i++) {
+      function spawn() {
         var el = document.createElement("span");
         el.className = "bit";
-        el.textContent = tokens[i % tokens.length];
-        el.style.left = (6 + Math.random() * 72) + "%";
-        el.style.top = (12 + Math.random() * 70) + "%";
+        el.textContent = tokens[Math.floor(Math.random() * tokens.length)];
+        el.style.left = (8 + Math.random() * 70) + "%";
+        el.style.top = (8 + Math.random() * 62) + "%";
         el.style.animationDuration = (10 + Math.random() * 12) + "s";
         el.style.animationDelay = (-Math.random() * 14) + "s";
         field.appendChild(el);
+        return el;
       }
+      if (reduce) return;
+      for (var i = 0; i < 14; i++) spawn();
+      if (!logo) return;
+
+      var dir = 1;
+      var t = 0;
+      var leg = 16000;
+      var x = 0;
+      var limit = 180;
+      function measure() {
+        var bar = document.querySelector(".topbar");
+        var menu = document.querySelector(".nav-right");
+        if (!bar || !menu) return;
+        var barRect = bar.getBoundingClientRect();
+        var menuRect = menu.getBoundingClientRect();
+        var start = logo.getBoundingClientRect().left - x;
+        var towardCenter = barRect.left + barRect.width * 0.42 - start;
+        var beforeMenu = menuRect.left - start - logo.offsetWidth - 28;
+        limit = Math.max(48, Math.min(towardCenter, beforeMenu));
+      }
+      measure();
+      window.addEventListener("resize", measure);
+
+      function eat() {
+        var lr = logo.getBoundingClientRect();
+        var bottom = lr.bottom + 28;
+        field.querySelectorAll(".bit:not(.eaten)").forEach(function (bit) {
+          var r = bit.getBoundingClientRect();
+          var hit = lr.left < r.right - 2 && lr.right > r.left + 2 && lr.top < r.bottom && bottom > r.top;
+          if (!hit) return;
+          bit.classList.add("eaten");
+          setTimeout(function () {
+            if (bit.parentNode) bit.remove();
+            spawn();
+          }, 300);
+        });
+      }
+
+      var last = performance.now();
+      function frame(now) {
+        var dt = Math.min(40, now - last);
+        last = now;
+        t += dt * dir;
+        if (t >= leg) { t = leg; dir = -1; }
+        if (t <= 0) { t = 0; dir = 1; }
+        var p = t / leg;
+        var e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+        x = limit * e;
+        logo.style.transform = "translateX(" + x.toFixed(1) + "px)";
+        eat();
+        requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
     })();
     document.querySelectorAll(".rec-more").forEach(function (btn) {
       btn.addEventListener("click", function () {
