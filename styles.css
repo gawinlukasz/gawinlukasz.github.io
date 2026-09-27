@@ -162,6 +162,7 @@ h1 {
   line-height: 1.25;
   max-width: 25em;
   margin: 0 0 22px;
+  text-align: center;
 }
 
 .facts {
