@@ -255,6 +255,28 @@ a.status:hover { background: #d7ebe3; border-color: #1f8a62; }
   100% { box-shadow: 0 0 0 0 rgba(31, 138, 98, 0); }
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 275px;
+  gap: 28px;
+  align-items: start;
+}
+.about-clips {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 275px;
+  max-width: 100%;
+}
+.clip {
+  width: 100%;
+  max-width: 275px;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  display: block;
+  background: #e7e1d4;
+}
 .prose p { max-width: 42em; margin: 0 0 14px; }
 
 .job {
@@ -415,6 +437,8 @@ footer a { color: var(--ink); }
   .nav-icons { display: flex; }
   .identity { align-items: center; gap: 14px; }
   .portrait { width: 96px; height: 116px; }
+  .about-layout { grid-template-columns: 1fr; }
+  .about-clips { width: min(275px, 100%); }
   .facts, .stack, .job { grid-template-columns: 1fr; }
   .photos { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 180px 180px; }
   .shot:first-child { grid-row: auto; grid-column: 1 / -1; height: 220px; }
