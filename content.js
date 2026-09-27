@@ -48,12 +48,12 @@ const SITE = {
 
   stack: [
     { name: "Oracle / SQL", note: "daily, production, including PL/SQL-shaped work", level: "senior" },
-    { name: "Python", note: "reporting app, notebooks, pandas refresh in progress", level: "mid" },
-    { name: "Jupyter", note: "analysis and charts, not just experiments", level: "mid" },
-    { name: "matplotlib / Plotly", note: "Jira stats, team workload, trends", level: "mid" },
+    { name: "Python (pandas,numpy)", note: "reporting app, data cleansing, manipulation and wrangling", level: "mid" },
+    { name: "Jupyter (matplotlib,seaborn)", note: "analysis, trends and charts, not just experiments", level: "mid" },
+    { name: "Power BI / Tableau", note: "moving notebook charts to a tool business already opens", level: "mid" },
     { name: "Atlassian Suite (Jira,Confluence) / ServiceNow", note: "queue, workflow, numbers behind the tickets", level: "senior" },
     { name: "Git / VSCode", note: "enough to work in a team, not a release engineer", level: "senior" },
-    { name: "Power BI / Tableau", note: "moving notebook charts to a tool business already opens", level: "mid" },
+    { name: "FME", note: "Using advanced transformers for filtering, aggregation, and joining especially in GIS data", level: "junior" },
     { name: "Databricks / Delta", note: "learning — lakehouse, not years of production yet", level: "junior" }
   ],
 
