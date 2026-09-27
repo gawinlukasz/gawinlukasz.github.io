@@ -14,7 +14,7 @@ const SITE = {
   availability: "Open to analyst and data roles from March 2027.\n Happy to talk earlier.",
 
   heroLead:
-    "Twenty years+ of getting a number out of a live systems that other people have to trust.",
+    "Twenty+ years of getting a number out of a live systems that other people have to trust.",
 
   about: [
     "For 20+ years I grew up with Jeppesen and Boeing in Poland. I was part of the first aviation unit in Gdańsk in 2007 (AvDocs). After that I supported production systems - production support, then system analyst.",
