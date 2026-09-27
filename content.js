@@ -58,10 +58,10 @@ const SITE = {
   ],
 
   skills: [
-    "Ad-hoc analysis on a live relational database",
+    "Ad-hoc analysis on a live relational databases",
     "Data quality checks, including replication that has drifted",
     "Turning a business question into a query and a report",
-    "Small automations before adding another manual step",
+    "Developing automations everywhere before adding another manual step",
     "Requirements that development can actually build",
     "Documentation and handover someone else can run",
     "Working with developers, operations and business owners",
