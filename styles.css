@@ -271,7 +271,7 @@ a.status:hover { background: #d7ebe3; border-color: #1f8a62; }
 .clip {
   width: 100%;
   max-width: 275px;
-  height: 130px;
+  height: 128px;
   object-fit: cover;
   object-position: center;
   border-radius: 18px;
