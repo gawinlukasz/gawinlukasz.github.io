@@ -193,14 +193,14 @@ h2 {
   margin: 0 0 8px;
 }
 .section-note {
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 28px;
+  font-family: "Corinthia", cursive;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
   color: var(--ink);
-  margin: 0 0 16px;
-  max-width: 18em;
-  line-height: 1.25;
+  margin: 0 0 10px;
+  max-width: 16em;
+  line-height: 1.05;
 }
 .status {
   display: inline-flex;
