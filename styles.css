@@ -221,7 +221,20 @@ h2 {
   margin: 0 0 16px;
   max-width: 28em;
   line-height: 1.3;
+  transition: opacity 1.6s ease;
 }
+.section-note.is-fading { opacity: 0; }
+.section-note.is-typing::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 0.8em;
+  margin-left: 2px;
+  background: currentColor;
+  vertical-align: baseline;
+  animation: note-caret 0.9s steps(1) infinite;
+}
+@keyframes note-caret { 50% { opacity: 0; } }
 .status {
   display: inline-flex;
   align-items: flex-start;
