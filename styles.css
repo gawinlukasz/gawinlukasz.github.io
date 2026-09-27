@@ -62,8 +62,8 @@ a:hover { color: var(--ink); }
 }
 @keyframes drift {
   0% { transform: translateY(16px); opacity: 0; }
-  18% { opacity: 0.2; }
-  75% { opacity: 0.1; }
+  18% { opacity: 0.42; }
+  75% { opacity: 0.28; }
   100% { transform: translateY(-70px); opacity: 0; }
 }
 nav, .identity { position: relative; z-index: 1; }
