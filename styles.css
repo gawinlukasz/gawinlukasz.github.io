@@ -172,7 +172,7 @@ h1 {
 }
 .lead {
   font-family: var(--serif);
-  font-style: normal;
+  font-style: italic;
   font-weight: 560;
   letter-spacing: -0.03em;
   font-size: 32px;
