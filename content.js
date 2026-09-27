@@ -76,12 +76,12 @@ const SITE = {
   ],
 
   outside: {
-    text: "Husband and dad of four. The rest of the week is the gym and food that is actually food. I am better at a long session than at a highlight reel.",
+    text: "Husband and dad of four daughters. After hard work – time to hit the gym and grab some healthy food. Long weekend? Let's hike in the mountains. I am better at a long session than at a highlight reel.",
     photos: [
       { file: "me.jpg", caption: "Gym" },
-      { file: "", caption: "Kitchen" },
+      { file: "", caption: "Mountains" },
       { file: "", caption: "Family" },
-      { file: "", caption: "Somewhere outside" }
+      { file: "", caption: "" }
     ]
   },
 
