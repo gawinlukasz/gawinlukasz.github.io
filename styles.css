@@ -193,11 +193,15 @@ h2 {
   margin: 0 0 8px;
 }
 .section-note {
-  font-size: 18px;
+  font-family: "Caveat", cursive;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: normal;
   color: var(--ink-soft);
-  margin: 0 0 22px;
-  max-width: 40em;
-  font-style: italic;
+  margin: 0 0 18px;
+  max-width: 22em;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
 }
 .status {
   display: inline-flex;
