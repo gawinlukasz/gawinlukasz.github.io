@@ -129,7 +129,12 @@ h2 {
   letter-spacing: -0.03em;
   margin: 0 0 8px;
 }
-.section-note { color: var(--ink-soft); margin: 0 0 22px; max-width: 40em; }
+.section-note {
+  color: var(--ink-soft);
+  margin: 0 0 22px;
+  max-width: 40em;
+  font-style: italic;
+}
 
 .prose p { max-width: 42em; margin: 0 0 14px; }
 
