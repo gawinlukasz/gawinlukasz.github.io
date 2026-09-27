@@ -82,7 +82,20 @@ nav {
   padding: 10px 0 2px;
   gap: 16px;
 }
-.logo-link { display: flex; align-items: center; line-height: 0; }
+.logo-link {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  position: relative;
+  z-index: 6;
+  will-change: transform;
+}
+.bit.eaten {
+  animation: none !important;
+  opacity: 0 !important;
+  transform: scale(0.12) !important;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
 .logo {
   height: 52px;
   width: 52px;
