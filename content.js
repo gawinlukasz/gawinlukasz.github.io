@@ -78,7 +78,7 @@ const SITE = {
   outside: {
     text: "Husband and dad of four. The rest of the week is the gym and food that is actually food. I am better at a long session than at a highlight reel.",
     photos: [
-      { file: "", caption: "Gym" },
+      { file: "images/me.jpg", caption: "Gym" },
       { file: "", caption: "Kitchen" },
       { file: "", caption: "Family" },
       { file: "", caption: "Somewhere outside" }
