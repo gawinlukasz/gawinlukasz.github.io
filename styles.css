@@ -40,7 +40,33 @@ a:hover { color: var(--ink); }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
   padding-bottom: 12px;
+  overflow: hidden;
 }
+.data-field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent 0 38%, #000 62%);
+}
+.bit {
+  position: absolute;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  opacity: 0;
+  white-space: nowrap;
+  animation: drift linear infinite;
+}
+@keyframes drift {
+  0% { transform: translateY(16px); opacity: 0; }
+  18% { opacity: 0.2; }
+  75% { opacity: 0.1; }
+  100% { transform: translateY(-70px); opacity: 0; }
+}
+nav, .identity { position: relative; z-index: 1; }
 
 nav {
   display: flex;
@@ -90,7 +116,7 @@ nav a:hover { color: var(--ink); }
   padding-top: 8px;
 }
 .portrait {
-  width: 275px;
+  width: 168px;
   height: 196px;
   object-fit: cover;
   object-position: center top;
@@ -98,6 +124,7 @@ nav a:hover { color: var(--ink); }
   border: 1px solid var(--line);
   flex: 0 0 auto;
   background: #e7e1d4;
+  display: block;
 }
 
 .hero { padding: 28px 0 8px; }
@@ -276,6 +303,9 @@ footer {
 }
 footer a { color: var(--ink); }
 
+@media (prefers-reduced-motion: reduce) {
+  .data-field { display: none; }
+}
 @media (max-width: 800px) {
   nav ul { display: none; }
   .nav-icons { display: flex; }
