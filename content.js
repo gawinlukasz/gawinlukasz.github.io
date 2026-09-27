@@ -82,7 +82,7 @@ const SITE = {
       { file: "mountains.jpg", caption: "Mountains" },
       { file: "sing.jpg", caption: "OMG..." },
       { file: "gym.jpg", caption: "Gym!" },
-      { file: "wife.jpg"}
+      { file: "wife.jpg", caption: "and wife" }
     ]
   },
 
