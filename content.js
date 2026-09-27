@@ -18,9 +18,9 @@ const SITE = {
 
   about: [
     "'There is no shame in admitting you don't know something. The shame lies in doing nothing about it.' - Łukasz Gawin",
-    "For 20+ years I grew up with Jeppesen and Boeing in Poland. I was part of the first aviation unit in Gdańsk in 2007 (AvDocs). After that I supported production systems — production support, then system analyst.",
+    "For 20+ years I grew up with Jeppesen and Boeing in Poland. I was part of the first aviation unit in Gdańsk in 2007 (AvDocs). After that I supported production systems - production support, then system analyst.",
     "When leadership had a question, I went into the databases and came back with an answer, a direction, or a recommendation. A slide was the last resort. A lot of the job was unglamorous, and I liked that part. Check why a number looks wrong. Write the report, automate it, build a small Python app so the business does not wait for a dedicated developer.",
-    "When they needed live numbers and KPIs, I pulled Jira into a Jupyter notebook and showed the charts — matplotlib and seaborn, not a slide deck.",
+    "When they needed live numbers and KPIs, I pulled Jira into a Jupyter notebook and showed the charts - matplotlib and seaborn, not a slide deck.",
     "I am ready for the next step: complex SQL, pandas, Power BI, Databricks. I will not pretend I have years of a lakehouse. I do have years of production data, and I am building the new stack around that habit."
   ],
 
