@@ -46,6 +46,7 @@ nav {
   text-decoration: none;
   color: var(--ink);
 }
+.nav-right { display: flex; align-items: center; gap: 22px; }
 nav ul {
   display: flex;
   gap: 18px;
@@ -56,6 +57,20 @@ nav ul {
 }
 nav a { color: var(--ink-soft); text-decoration: none; }
 nav a:hover { color: var(--ink); }
+
+.nav-icons { display: flex; gap: 8px; }
+.nav-icons a {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+}
+.nav-icons a:hover { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+.nav-icons svg { width: 16px; height: 16px; fill: currentColor; }
 
 .hero { padding: 54px 0 28px; }
 .kicker {
@@ -249,6 +264,7 @@ footer a { color: var(--ink); }
 
 @media (max-width: 800px) {
   nav ul { display: none; }
+  .nav-icons { display: flex; }
   .facts, .stack, .job { grid-template-columns: 1fr; }
   .photos { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 180px 180px; }
   .shot:first-child { grid-row: auto; grid-column: 1 / -1; height: 220px; }
