@@ -244,9 +244,9 @@ h2 {
   padding: 4px 8px;
   border-radius: 999px;
 }
-.tag.strong { background: #e5f2ee; color: var(--accent-2); }
-.tag.working { background: #f3e7dc; color: var(--accent); }
-.tag.learning { background: #e7eef6; color: var(--learn); }
+.tag.senior { background: #e5f2ee; color: var(--accent-2); }
+.tag.mid { background: #f3e7dc; color: var(--accent); }
+.tag.junior { background: #e7eef6; color: var(--learn); }
 
 .skills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .skills li {
