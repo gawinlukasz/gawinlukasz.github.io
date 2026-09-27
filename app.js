@@ -17,10 +17,9 @@ function render() {
   $("#avail").textContent = SITE.availability;
 
   const mail = $("#mail");
-  mail.href = `mailto:${SITE.email}`;
-  mail.textContent = SITE.email.includes("twoj@") ? "Email" : SITE.email;
+  if (mail) mail.href = `mailto:${SITE.email}`;
   const li = $("#li");
-  li.href = SITE.linkedin;
+  if (li) li.href = SITE.linkedin;
 
   $("#facts").innerHTML = SITE.facts
     .map((f) => `<div class="fact"><b>${esc(f.k)}</b><span>${esc(f.v)}</span></div>`)
