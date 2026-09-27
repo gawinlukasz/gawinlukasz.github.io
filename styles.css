@@ -130,8 +130,7 @@ h2 {
   margin: 0 0 8px;
 }
 .section-note {
-  font-weight: 560;
-  font-size: 28px;
+  font-size: 18px;
   color: var(--ink-soft);
   margin: 0 0 22px;
   max-width: 40em;
