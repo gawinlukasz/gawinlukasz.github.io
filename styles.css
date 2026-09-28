@@ -461,3 +461,9 @@ footer a { color: var(--ink); }
   .card li { flex-direction: column; gap: 2px; }
   footer { flex-direction: column; }
 }
+.playlist { margin-top: 22px; }
+.playlist iframe {
+  border: 0;
+  border-radius: 16px;
+  display: block;
+}
