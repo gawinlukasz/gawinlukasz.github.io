@@ -340,7 +340,7 @@ a.status:hover { background: #d7ebe3; border-color: #1f8a62; }
 .tag.mid { background: #f3e7dc; color: var(--accent); }
 .tag.junior { background: #e7eef6; color: var(--learn); }
 
-.skills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.skills { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .skills li {
   background: var(--card);
   border: 1px solid var(--line);
