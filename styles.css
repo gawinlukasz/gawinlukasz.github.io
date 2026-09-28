@@ -342,6 +342,7 @@ a.status:hover { background: #d7ebe3; border-color: #1f8a62; }
 
 .skills { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .skills li {
+  width: auto;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 999px;
