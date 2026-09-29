@@ -42,7 +42,7 @@
         <div>
           <h1 id="hero-name">Łukasz Gawin</h1>
           <p class="role" id="hero-role"></p>
-          <p></p>   
+          <p></p>
           <a class="status" id="avail" href="https://www.linkedin.com/in/lukaszgawin/" target="_blank" rel="noopener"></a>
         </div>
         <video class="portrait" src="images/me.mp4" autoplay muted loop playsinline></video>
@@ -302,32 +302,43 @@
   (function () {
     if (phoneBrowser || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     document.querySelectorAll(".section-note").forEach(function (el, idx) {
-      var full = el.textContent;
-      if (!full || !full.trim()) return;
+      var full = (el.textContent || "").trim();
+      if (!full) return;
+
+      var ghost = document.createElement("span");
+      ghost.className = "section-note-ghost";
+      ghost.textContent = full;
+
+      var live = document.createElement("span");
+      live.className = "section-note-live";
+
+      el.textContent = "";
+      el.appendChild(ghost);
+      el.appendChild(live);
+
       var i = 0;
       function type() {
-        el.classList.remove("is-fading");
-        el.classList.add("is-typing");
-        el.style.opacity = "1";
-        el.textContent = full.slice(0, i);
+        live.classList.remove("is-fading");
+        live.classList.add("is-typing");
+        live.style.opacity = "1";
+        live.textContent = full.slice(0, i);
         if (i < full.length) {
           i++;
           var prev = full.charAt(i - 1);
           setTimeout(type, prev === " " ? 40 : 58);
         } else {
-          el.classList.remove("is-typing");
+          live.classList.remove("is-typing");
           setTimeout(fade, 5000);
         }
       }
       function fade() {
-        el.classList.add("is-fading");
+        live.classList.add("is-fading");
         setTimeout(function () {
           i = 0;
-          el.textContent = "";
+          live.textContent = "";
           type();
         }, 1600);
       }
-      el.textContent = "";
       setTimeout(type, 300 + idx * 250);
     });
   })();
