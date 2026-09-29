@@ -57,8 +57,10 @@ const SITE = {
     { name: "HTML / CSS / PHP", note: "built sites wired to SQL databases, not only static pages", level: "mid" },
     { name: "MS Visio / BPMN", note: "how a system actually worked, then process optimization. Diagrams and requirements people could build from.", level: "mid" },
     { name: "ArcGIS", note: "Years of fixing prd broken .gdb files, hunted bad geometries and data that did not match the map.", level: "senior" },
+    { name: "Generative AI", note: "daily at work — draft SQL and Python, check edge cases, then verify the number myself", level: "mid" },
     { name: "FME", note: "Using advanced transformers for filtering, aggregation, and joining especially in GIS data", level: "junior" },
-    { name: "Databricks / Delta", note: "learning — lakehouse, not years of production yet", level: "junior" }
+    { name: "Databricks / Delta", note: "learning — lakehouse, not years of production yet", level: "junior" },
+    { name: "Fortra Automate", note: "10+ years building production extracts scripts. Still know it. Moved that work to Python.", level: "senior" },     
   ],
 
   skills: [
