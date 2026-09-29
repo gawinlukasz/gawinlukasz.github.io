@@ -20,7 +20,7 @@ const SITE = {
     "For 20+ years I grew up with Jeppesen and Boeing in Poland. I was part of the first aviation unit in Gdańsk in 2007 (AvDocs). After that I supported production systems - production support, then system analyst.",
     "When leadership had a question, I went into the databases and came back with an answer, a direction, or a recommendation. A slide was the last resort. A lot of the job was unglamorous, and I liked that part. Check why a number looks wrong. Write the report, automate it, build a small Python app so the business does not wait for a dedicated developer.",
     "When they needed live numbers and KPIs, I pulled Jira into a Jupyter notebook and showed the charts - matplotlib and seaborn, not a slide deck.",
-    "I am ready for the next step: complex SQL, pandas, Power BI, Databricks. I will not pretend I have years of a lakehouse. I do have years of production data, and I am building the new stack around that habit."
+    "I am ready for the next step: complex SQL, pandas, Power BI, Databricks. I will not pretend I have years of a lakehouse. I do have years of production data, and I am building the new stack around that habit. I use AI tools daily at work — to draft SQL and Python, check edge cases, and shorten the path from a business question to a number or a script I have already verified."
   ],
 
   facts: [
@@ -69,6 +69,7 @@ const SITE = {
     "Requirements that development can actually build",
     "Documentation and handover someone else can run",
     "Working with developers, operations and business owners",
+    "Generative AI (ChatGPT, Claude, Prompt Engineering)",
     "English in an international team"
   ],
 
