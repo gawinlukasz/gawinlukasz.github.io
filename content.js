@@ -32,18 +32,19 @@ const SITE = {
 
   experience: [
     {
-      years: "2005 — 2027",
-      title: "System & Data Analyst",
+      years: "2021 — 2027",
+      title: "Senior System & Data Analyst",
       org: "Jeppesen, Boeing, ForeFlight",
       place: "Gdańsk · hybrid",
       points: [
-        "Supported production systems.",
-        "Data Analysis on production Oracle DB's, answered business questions in SQL, kept the number trustworthy.",
-        "Automated operational reports, built Python apps (matplotlib, seaborn) to keep leadership up to date with KPI's.",
-        "Requirements, documentation and handover on systems other people depend on every day. ",
-        "SAFe and Scrum in daily work."
+        "Analysis and maintenance of production relational databases, AMDB and AMM (airport data), on Oracle, including two replicated instances.",
+        "Identifying and resolving data discrepancies across multiple sources prior to delivering results to business stakeholders.",
+        "Preparing complex SQL analyses to address specific operational queries, including error margins, record counts, and process impacts.",
+        "Validating results and verifying data quality, including post-deployment test scenarios.",
+        "Developing recurring metrics and reports. Automating reporting workflows using Python (pandas). ",
+        "Conducting analyses and visualizations in Jupyter (matplotlib, seaborn), followed by developing reports and dashboards in Power BI and Tableau.",
       ]
-    }
+    }     
   ],
 
   stack: [
