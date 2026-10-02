@@ -73,7 +73,7 @@ const SITE = {
     "Documentation and handover someone else can run",
     "Working with developers, operations and business owners",
     "Generative AI (ChatGPT, Claude, Prompt Engineering)",
-    "English in an international team"
+    "English in an international team",
     "German - A1/A2"
   ],
 
