@@ -8,7 +8,7 @@ const SITE = {
   name: "Łukasz Gawin",
   role: "System & Data Analyst",
   location: "Tricity, Poland",
-  email: "gawin.j.lukasz@gmail.com", 
+  email: "lukasz.j.gawin@gmail.com", 
   linkedin: "https://www.linkedin.com/in/lukaszgawin/",
   github: "",
   availability: "Open to analyst and data roles from March 2027.\n Happy to talk earlier.",
